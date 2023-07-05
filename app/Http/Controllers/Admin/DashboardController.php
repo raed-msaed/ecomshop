@@ -14,4 +14,8 @@ class DashboardController extends Controller
     public function ContactMessage(){
         return view('admin.messages');
     }
+
+    public function CreateCategory(){
+        return view('admin.createcategory');
+    }
 }
