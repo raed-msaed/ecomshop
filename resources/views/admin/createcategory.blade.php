@@ -1,4 +1,30 @@
 @extends('admin.layouts.template')
+
+@section('pagetitle','Create Category')
+
 @section('content')
-    <h2>Create Category</h2>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                  <h4>Create Category</h4>
+                </div>
+
+                <form action="" method="post">
+                        <div class="card-body">
+
+                            <div class="form-group">
+                            <label for="category_name">Enter Category Name</label>
+                            <input type="text" class="form-control" id="category_name" name="category_name" placeholder="Electronics">
+                            </div>
+                        </div>  
+
+                        <div class="card-footer">
+                            <button class="btn btn-primary">Create Category</button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection

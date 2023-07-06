@@ -1,4 +1,7 @@
 @extends('admin.layouts.template')
+
+@section('pagetitle','Admin Dashboard')
+
 @section('content')
 
         <section class="section">
