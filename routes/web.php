@@ -37,12 +37,13 @@ Route::middleware('auth','role:admin')->group(function(){
         Route::get('/admin/create-category', 'CreateCategory')->name('admin.createcategory');
         Route::get('/admin/all-category', 'AllCategory')->name('admin.allcategory');
         Route::get('/admin/create-sub-category', 'CreateSubCategory')->name('admin.createsubcategory');
+        Route::get('/admin/all-sub-category', 'AllSubCategory')->name('admin.allsubcategory');
         Route::get('/admin/create-brands', 'CreateBrands')->name('admin.createbrands');
         Route::get('/admin/all-brands', 'AllBrands')->name('admin.allbrands');
     });
     Route::controller(ProductController::class)->group(function(){
         Route::get('/admin/add-product', 'AddProduct')->name('admin.addproduct');
-        Route::get('/admin/all-product', 'AllProduct')->name('admin.allproduct');
+        Route::get('/admin/all-product', 'AllProducts')->name('admin.allproduct');
     });
 });
 
