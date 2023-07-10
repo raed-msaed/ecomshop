@@ -1,0 +1,1 @@
+D:\DEVLEOPEMENT\DEV_LARAVEL\xampp\htdocs\ecomshop>php artisan db:seed               ---->role
